@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css" />
+    <title>Payment Page</title>
+  </head>
+  <body>
+    <div class="payment-container">
+      <h1>Payment Details</h1>
+
+      <form id="paymentForm">
+        <label for="cardNumber">Card Number:</label>
+        <input
+          type="text"
+          id="cardNumber"
+          name="cardNumber"
+          placeholder="1234 5678 9012 3456"
+          required
+        />
+
+        <label for="expirationDate">Expiration Date:</label>
+        <input
+          type="text"
+          id="expirationDate"
+          name="expirationDate"
+          placeholder="MM/YY"
+          required
+        />
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="123" required />
+
+        <button type="button">
+          <a href="./paymentdone.html"> <h4>Submit Payment</h4> </a>
+        </button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
