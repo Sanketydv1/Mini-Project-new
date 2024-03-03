@@ -6,17 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="payment.css" />
     <script src="order.js" defer></script>
+    <script>
+      function clearstor() {
+        location.reload();
+        cart = [];
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+    </script>
   </head>
   <body>
     <div class="tracking-container">
           <h1>Your order is in the list.</h1>
-    
-          <div class="your-order"></div>
+    <div class="listers">
+
+      <div class="your-order"></div>
+    </div>
           <div class="tracking-status">
 
             <button id="payment-button">
-                <a href="./payment.html"> <h3>Process payment </h3></a>
+                <a href="./payment.html" class="underlinehide"> <h3>Process payment </h3></a>
               </button>
+              <button onclick="clearstor()">clear all</button>
     </div>
   </body>
 </html>
